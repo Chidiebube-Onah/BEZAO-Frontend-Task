@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #133fae;
+}
+
+body{
+    background-color: #fdfdfd;
+    color: #2e2e3e;
+    overflow-x: hidden;
+    font-family: Nunito, sans-serif;
+}
+
+p{
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: 700;
+}
+
+button{
+    font-family: Nunito, sans-serif;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+
+.btn{
+    font-weight: 700;
+    transition: 400ms ease;
+}
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.bg-primary{
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    filter: brightness(1.2);
+}
+
+.full-width{
+    width: 100%;
+}
+
+.card{
+    border-radius: 6px;
+    border-width: 1px;
+}
+
+.card-img-top{
+    width: 40%;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-pills{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.nav-pills a{
+    color: #5e5e6d;
+}
+
+.nav-pills .nav-link{
+    border-bottom: 1px #e4e4e4 solid;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #2e2e3e;
+    background-color: transparent;
+    border-bottom: 3px solid #a00507;
+    border-radius: 0;
+}
+
+.panel-body-alert{
+    letter-spacing: 2px;
+}
+
+@media(min-width:768px){
+    .nav-pills{
+        flex-direction: row;
+    }
+}
